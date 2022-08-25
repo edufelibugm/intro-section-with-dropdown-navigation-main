@@ -189,7 +189,125 @@ nav ul li .dos.show {
     width: 480px;
 }
 
-@media (max-width: 1160px) {
+@media (min-width: 1160px) {
+    /* SPECIFY */
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+/* NAVEGATION */
+nav {
+    width: 100%;
+    height: 80px;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+nav ul li a {
+    color: hsl(0, 0%, 41%);
+    font-size: 15px;
+}
+
+nav ul:first-of-type {
+    width: 75%;
+    margin: 0 50px;
+    gap: 35px;
+}
+nav ul:last-of-type {
+    gap: 35px;
+}
+nav ul li .register {
+    padding: 10px 20px;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
+}
+
+nav ul li .sub-menu {
+    display: none;
+}
+
+nav ul li .sub-menu.show, .dos {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 152px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -12px 10px 24px gray;
+    margin-bottom: -230px;
+    margin-left: -80px;
+    position: absolute;
+}
+
+nav ul li .dos.show {
+    margin-left: 0;
+    text-align: left;
+}
+
+/* CONTENT */
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 130px;
+    gap: 140px;
+}
+
+.main-content .text h1 {
+    font-size: 80px;
+    min-width: 510px;
+    margin-bottom: 65px;
+    position: inherit;
+}
+
+.main-content .text p {
+    max-width: 420px;
+    text-align: justify;
+    margin-bottom: 55px;
+}
+
+.main-content .text button {
+    width: 162px;
+    height: 55px;
+    border: 2px solid hsl(0, 0%, 8%);
+    border-radius: 15px;
+    background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    font-size: 18px;
+    margin-bottom: 105px;
+    transition: all .5s ;
+}
+.main-content .text button:hover {
+    color: hsl(0, 0%, 8%);
+    background: hsl(0, 0%, 98%);
+    border: hsl(0, 0%, 8%) solid 2px;
+    transition: all .5s ;
+}
+
+.main-content .text .images {
+    width: 100%;
+    display: flex;
+    gap: 35px;
+}
+.main-content .text .images img {
+    object-fit: contain;
+}
+
+.main-content .hero {
+    width: 480px;
+}
+}
+
+@media (min-width: 710px) {
     .main-content {
         width: 100%;
         display: flex;
